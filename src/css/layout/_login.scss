@@ -1,0 +1,69 @@
+//LOGON, REGISTRATION PAGE AND FORGOTTEN PASSWORD
+
+.login{
+   text-align: center;
+   margin-bottom: 5%;
+   width: 100%;
+   overflow: hidden;
+
+   .page-heading{
+       height: 389px;
+       align-items: flex-start;
+       padding-top: 70px;
+  
+   }
+   form{
+       width: 436px;
+        background-color: $dark;
+        margin: auto;
+        padding: 20px;
+        padding-bottom: 40px;
+        margin-top: -200px;
+
+        @include for-sm-only{
+            width: 90%;
+            
+        }
+       h3{
+           font-weight: bold;
+           font-size: 36px;
+           color: $white;
+           margin: 20px 0;
+       }
+       input{
+           width: 243px;
+           height: 48px;
+           background-color: black;
+           padding: 15px;
+           color: $grey;
+           margin: 10px 0;
+
+       }
+       button{
+           margin: 10px 0;
+           width: 243px;
+           height: 48px;
+       }
+   }
+   h5{
+       font-weight: bold;
+       margin: 40px 15px;
+       a{
+           color:$yellow;
+       }
+   }
+}
+
+
+//FOGOT PASSWORD
+#forgot-password{
+    width: 640px;
+}
+
+@media screen and (max-width: 650px) {
+
+     #forgot-password{
+        width: 90% ;
+    }
+ }  
+    

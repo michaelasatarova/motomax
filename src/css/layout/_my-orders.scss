@@ -1,0 +1,132 @@
+.my-orders{
+
+    .custom-container{
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .my-account-navi{
+        width: 324px;
+        display: none;
+
+        @include xl-up{
+            display: block;
+        }
+
+        h3{
+            background-color: $dark;
+            padding: 20px;
+            color: $white;
+            font-weight: bold;
+        }
+        ul{
+            li{
+                padding: 15px;
+                font-size: 17px;
+                color: $grey;
+                .active{
+                    color: $yellow;
+                    text-decoration: none;
+                }
+                a{
+                    color: $grey;
+                    &:hover, &:active, &:focus{
+                        color: $yellow;
+                        text-decoration: none;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+    //orders
+   .my-orders-list{
+       margin-left: 40px;
+
+       @include for-sm-only{
+           margin-left: 0px;
+       }
+       h3{
+        padding: 20px 0;
+        font-weight: bold;
+       }
+       .order-heading{
+           display: flex;
+           h5{
+               font-weight: bold;
+               margin-right: 13%;
+           }
+       }
+       .item, .item-mobile{
+           display: flex;
+           width: 812px;
+           height: 80px;
+           background-color: #ffffff6e;
+           justify-content: space-between;
+           align-items: center;
+           padding: 15px;
+           margin-bottom: 10px;
+
+           p{
+               margin: 0;
+           }
+           h5{
+               font-weight: bold;
+               font-size: 22px;
+           }
+           .paid{
+               background-color: $dark;
+               padding: 5px;
+               color: $grey;
+               font-weight: 13px;
+           }
+           .btn-white{
+               border:1px solid $dark;
+               width: 92px;
+               height: 37px;
+               text-align: center;
+               padding: 5px;
+           }
+       }
+       .item-mobile{
+           display: none;
+           flex-direction: column;
+            height: 220px;
+            justify-content: flex-start;
+            width: 100%;
+           .item-row{
+            display: flex;
+            justify-content: space-between;
+            width: 100%; 
+            
+            h5{
+                font-size: 16px;
+            }
+        }
+       }
+   }
+
+}
+
+//my orders
+//media queries
+
+@media screen and (max-width: 950px) {
+
+    .my-orders{
+        .my-orders-list{
+            width: 100%;
+            .order-heading{
+                display: none;
+            }
+            .item{
+                display: none;
+            }
+            .item-mobile{
+                display: block;
+            }
+        }
+    }
+}

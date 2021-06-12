@@ -1,0 +1,26 @@
+.page-navigation{
+    background-color: $dark;
+    padding: 10px;
+    margin: 20px 0;
+
+    .pagination{
+        justify-content: center;
+        margin: 0;
+        .page-link{
+            color: $white;
+            background-color: black;
+            border:none;
+            margin: 3px;
+            font-size: 14px;
+            font-weight: 300;
+            width: 40px;
+            height: 40px;
+            padding: 10px 0 0 0;
+            text-align: center;
+
+            &:hover, &:focus, &:active{
+                background-color: $yellow; 
+            }
+        }
+    }
+}

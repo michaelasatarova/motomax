@@ -1,0 +1,144 @@
+.order{
+
+    form{
+        margin: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        h3{
+            font-weight: bold;
+        }
+        h5{
+            font-size: 16px;
+            color: $grey;
+            font-weight: 300;
+            margin: 20px 0;
+
+            span{
+                color: $yellow;
+            }
+        }
+        .form-data{
+            width:647px;
+            padding: 40px;
+            background-color: #ffffff3b;
+            margin:10px 0;
+            height: 100%;
+
+            @include md-up{
+                height: 682px;
+            }
+        }
+
+        .form-row{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            label{
+
+                @include for-sm-only{
+                    width: 100%;
+                }
+                p{
+                    margin: 10px 0 0 0;
+                    color: $grey;
+                }
+                span{
+                    color: red;
+                }
+                input, select{
+                    width: 260px ;
+                    height: 50px;
+                    background-color: $grey;
+                    color: $dark;
+                    padding: 15px;
+                    border: none;
+                    margin-right: 10px;
+
+                    @include for-sm-only{
+                        width: 100%;
+                    }
+                }
+    
+            }
+        }
+
+
+
+        //form-right order item
+        .form-order{
+            width:536px;
+            padding: 40px;
+            background-color: #ffffff3b;
+            margin:10px 0;
+
+            small{
+                font-size: 14px;
+                color: $grey;
+            }
+            .order-item{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid $grey;
+                padding: 20px 0 10px 0;
+
+                img{
+                   width: 122px;
+                   height: 139px;   
+                }
+                div{
+                    padding: 0 10px;
+                    h5{
+                        color: $grey;
+                        font-weight: bold;
+                        margin: 10px 0;
+                    }
+                    small{
+                        font-size: 12px;
+                    }
+                    h4{
+                       color:$yellow ;
+                       font-weight: bold;
+                       margin: 10px 0;
+                    }
+                }
+            }
+            .del-order{
+                font-weight: bold;
+            }
+
+            .order-row, .order-total{
+                display: flex;
+                justify-content: space-between;
+
+                p{
+                    font-size: 16px;
+                    margin: 0;
+                }
+                .yellow-text{
+                    color: $yellow;
+                    font-size: 16px;
+                }
+            }
+            .order-total{
+                p, .yellow-text{
+                    font-size: 24px;
+                    margin: 20px 0;
+
+                    @include for-sm-only{
+                        font-size: 16px;
+                    }
+                }
+                .yellow-text{
+                    font-weight: bold;
+                }
+            }
+
+            .btn-orange{
+                width: 100%;
+            }
+        }
+
+    }
+
+}

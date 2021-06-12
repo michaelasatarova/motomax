@@ -1,0 +1,109 @@
+footer{
+    background-color: $dark;
+    .footer-s1{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        border-bottom: 2px solid $grey;
+
+        .footer-contact{
+            display: flex;
+            align-items: center;
+            div{
+                margin-left: 15px;
+                color:$white;
+                h4{
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 3px;
+                }
+                p{
+                    font-size: 18px;
+                    margin: 0;
+                    span{
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-s2{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+
+        .footer-col{
+            color: $white;
+            border-right: 2px solid $grey;
+            padding-right: 5%;
+            p, a{
+                opacity: 60%;
+                font-size: 16px;
+                color:$white;
+                font-weight: 300;
+            }
+            li{
+                margin-bottom: 15px;
+            }
+
+        }
+    }
+
+    .footer-s3{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        flex-wrap: wrap;
+        p{
+            opacity: 60%;
+            font-size: 16px;
+            color:$white;
+            font-weight: 300;
+        }
+    }
+
+}
+
+
+//media
+@media screen and (max-width: 1300px) {
+    footer{
+        .footer-s1{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            .footer-contact{
+                margin: 10px  20px 10px 0;
+                                 
+                }
+            }
+        
+         .footer-s2{
+            flex-wrap: wrap;
+            .footer-col{
+                border:none;
+                h3{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer{
+        .footer-s1{
+            .footer-contact{
+                div{
+                    p{
+                        max-width: 210px;
+                    }
+                }
+            }
+        }
+         .footer-s2{
+            flex-direction: column;
+            }
+        }
+    }

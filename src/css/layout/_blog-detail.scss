@@ -1,0 +1,151 @@
+.blog-detail{
+    .heading-img{
+        // height: 500px;
+        margin: 0;
+        margin-top: 40px;
+    }
+    .btn-orange{
+        width: 146px;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 15px;
+    }
+    h5{
+        color: $grey;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+
+    h1{
+        font-size: 48px;
+        font-weight: bold;
+        margin: 30px 0;
+
+        @include for-sm-only{
+            font-size: 26px;
+        }
+    }
+    p{
+        color: $grey;
+        margin: 20px 0;
+    }
+    .long-comment{
+        width: 100%;
+        @include for-sm-only{
+            width: 120% !important;
+        }
+    }
+    img{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+
+    //accordion
+    #accordion{
+        width: 100%;
+        .panel{
+            border:none;
+            background-color: #00000000;
+        }
+        .panel-heading{
+            margin-bottom: 5px;
+            border:1px solid $light;
+            background-color: #00000000;
+            padding: 10px 20px;
+
+            h4{
+                margin-bottom: 0;
+                padding: 0;
+                border-bottom: 0;
+                font-size: 14px;
+                font-weight: bold;
+                a{
+                   color: $grey !important;  
+                }
+                .fa{
+                    float: right;
+                }
+            }
+
+        }
+        .panel-body{
+            color: $grey;
+           font-size: 16px;
+           padding: 20px;
+        }
+    }
+
+    h4{
+        color: $grey;
+        border-bottom: 1px solid $light;
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+    
+    //blog comments
+    .blog-comments{
+        margin-top: 40px;
+    }
+
+
+    //comment-form
+    form{
+        margin-top: 40px;
+        h4{
+            font-size: 24px;
+            color: $dark;
+            margin-bottom: 40px;
+        }
+        input, textarea{
+            width: 100%;
+            height: 40px;
+            margin: 5px 0;
+            padding:0 15px ;
+            background-color: transparent;
+            border:1px solid $light;
+        }
+        textarea{
+            height:190px ;
+            outline:none;
+            padding: 15px;
+        }
+        div{
+            display: flex;
+            input:first-child{
+                margin-right: 10px;
+            }
+        }
+        button{
+            text-align: center;
+            font-weight: bold !important;
+            padding-top: 0 !important;
+            float: right;
+            width: 260px !important;
+
+            @include for-sm-only{
+                float:none;
+                width: 100% !important;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+    .blog-posts-on-blog-detail-page{
+        display: block;
+        @include for-sm-only{
+            display: none;
+        }
+    }
+
+
+//media queries
+
+@media screen and (max-width: 1000px) {
+   
+
+}

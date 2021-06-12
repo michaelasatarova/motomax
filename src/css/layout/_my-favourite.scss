@@ -1,0 +1,123 @@
+.my-favourite{
+    .custom-container{
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .my-account-navi{
+        width: 324px;
+        display: none;
+
+        @include xl-up{
+            display: block;
+        }
+
+        h3{
+            background-color: $dark;
+            padding: 20px;
+            color: $white;
+            font-weight: bold;
+        }
+        ul{
+            li{
+                padding: 15px;
+                font-size: 17px;
+                color: $grey;
+                .active{
+                    color: $yellow;
+                    text-decoration: none;
+                }
+                a{
+                    color: $grey;
+                    &:hover, &:active, &:focus{
+                        color: $yellow;
+                        text-decoration: none;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+    //my favourite
+    .my-favourite-list{
+        margin-left: 0;
+        width: 100%;
+
+        @include md-up{
+          margin-left: 40px;  
+        }
+
+        h3{
+            padding: 20px 0;
+            font-weight: bold;
+            @include for-sm-only{
+                text-align: center;
+            }  
+        }
+        .my-favourite-items{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: -60px;
+
+            @include for-sm-only{
+                justify-content: center;
+                .product-card{
+                    display: none;
+                }
+                .product-card:nth-child(-n+4){
+                    display: block;
+                }
+            }
+
+            .product-card{
+              width: 255px;
+
+              img{
+                  width: 255px;
+                  height: 291px;
+              }
+            }
+        }
+
+        .page-navigation{
+            // width: 100%;
+            width: 80%;
+
+            @include for-sm-only{
+                width: 100%;
+            }
+        }
+    
+
+        //EXTRA
+        .page-alignment{
+            width: 1085px;
+            @include for-sm-only{
+                width: 100%;
+            }
+        }
+
+   } 
+}
+
+@media screen and (max-width: 1550px) {
+    .my-favourite{
+        .my-favourite-list{
+            .page-alignment{
+                width: 810px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 945px) {
+    .my-favourite{
+        .my-favourite-list{
+            .page-alignment{
+                width: 530px;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.product-card{
+    margin-right: 20px;
+    img{
+        width: 385px;
+        height: 438px; 
+    }
+    h4{
+        font-size: 20px;
+        color: $dark;
+        opacity: 0.6;
+        margin: 10px 0;
+    }
+    .product-prices{
+        display: flex;
+        font-size: 24px;
+        *{
+            margin-right: 15px;
+        }
+        .gold{
+            color:$yellow;
+            font-weight: 600;
+        }
+        .sale{
+            color: $dark;
+            opacity: 0.6;
+        }
+        
+    }
+    button{
+        margin-top: 20px;
+    }
+   
+}
+
+@media screen and (max-width: 576px) {
+    .product-card{
+        width: 255px;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

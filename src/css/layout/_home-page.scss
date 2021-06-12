@@ -1,0 +1,362 @@
+.hp{
+    //bootstrap carousel
+    .header-slide1, .header-slide2{
+        height: 544px;
+        background-image: url(/src/img/Foto-1.jpg);
+        background-size: cover;
+        background-repeat: none;
+        
+
+        .header-slide-group{
+            border-left:3px solid $light;
+            margin-top:7% ;
+            margin-left: 9%;
+            padding: 20px;
+            padding-left: 40px;
+        }
+
+        h1{
+           
+            max-width: 770px;
+            font-weight: bold;
+            color: $white;
+
+            span{
+                color: $yellow;
+            }
+        }
+        .btn-group-category{
+            display: flex;
+            margin-top: 40px;
+            button{
+                margin-right: 20px;
+            }
+        }
+    }
+    //carousel custom arrows
+    .carousel-arrows{
+        display: flex;
+        justify-content: flex-end;
+        .carousel-control-next, .carousel-control-prev{
+        position: relative;
+        top:-50px;
+        left: 0px;
+        width: 50px;
+        height: 50px;
+        background-color: $grey; 
+        }
+        .carousel-control-prev{
+            margin-right: 6px;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon{
+           background-image:none;
+           color: $white; 
+        }
+    }
+
+    //categories
+    .hp-s1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .product-category{
+            display: flex;
+            margin: 10px 10px 0 0;
+            img{
+                width: 62px;
+                height: 62px;
+            }
+            h4{
+                margin: auto auto;
+                padding-left: 10px;
+                color:$dark;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    //best products
+    .best-products-heading{
+        font-size: 36px;
+        font-weight: bold;
+        span{
+            font-weight: 300;
+        }
+
+        @include for-sm-only{
+            width: 50%;
+        }
+    }
+    .best-products{
+        .carousel-arrows{
+            display: flex;
+            justify-content: flex-end;
+            .carousel-control-next, .carousel-control-prev{
+            position: relative;
+            top:-40px;
+            left: 0px;
+            width: 40px;
+            height: 40px;
+            background-color: black; 
+            opacity: 1;
+            }
+            .carousel-control-prev{
+                margin-right: 6px;
+            }
+            .carousel-control-prev-icon, .carousel-control-next-icon{
+               background-image:none;
+               color: $white; 
+            }
+        }
+    }
+    .best-product-slide{
+        display: flex;
+        margin-right: 15px;
+        margin-top: -80px;
+        .product-card{
+            
+        }
+    }
+
+    
+
+    //sales
+    .hp-sale{
+        margin: 40px 0;
+        width: 100%;
+        height: 507px;
+        background-image: url(/src/img/Foto-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding: 15px;
+        .hp-sale-s1{
+            max-width: 824px;
+            color:$white;
+            height: 100%;
+            margin: auto auto;
+            position: relative;
+            top: 25%;
+
+            h1{
+                font-weight: bold;
+                margin: 20px;
+            }
+            h2{
+                font-size: 36px;
+                font-weight: 400;
+                margin: 20px 0;
+            }
+            button{
+                width: 204px;
+                margin: 20px ;
+            }
+        }
+        
+    }
+
+
+    //REFERENCE
+    .hp-reference{
+        margin: 40px 0 20px 0;
+        background-color: $dark;
+
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        .hp-reference-s1{
+            margin: 20px 0;
+            display: flex;
+            padding: 25px 15px;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: space-between;
+            h3{
+                font-size: 32px;
+                font-weight: bold;
+                color: $white;
+                span{
+                    font-weight: 300;
+                }
+            }
+            .client-reference{
+                display: flex;
+                div{
+                    p{
+                        font-size: 20px;
+                        max-width: 674px;
+                        color: $white;
+                        opacity: 60%;
+                        margin: 15px;
+                        font-weight: 300;
+                    }
+                    h4{
+                        font-size: 24px;
+                        color: $yellow;
+                        margin: 15px;
+
+                    }
+                }
+            }
+        }
+        .carousel-arrows{
+            display: flex;
+            justify-content: flex-end;
+            .carousel-control-next, .carousel-control-prev{
+            position: relative;
+            top:0px;
+            left: 0px;
+            width: 40px;
+            height: 40px;
+            background-color: grey; 
+            }
+            .carousel-control-prev{
+                margin-right: 6px;
+            }
+            .carousel-control-prev-icon, .carousel-control-next-icon{
+               background-image:none;
+               color: $white; 
+               display: none;
+            }
+        }
+    }
+
+    //newsletter
+    .hp-newsletter{
+        text-align: center;
+        padding: 20px;
+        padding-top: 60px;
+        h3{
+           max-width: 834px; 
+           margin: 10px auto;
+           line-height: 1.6;
+           font-weight: 400;
+        }
+        h4{
+            font-size: 24px;
+            opacity: 60%;
+            font-weight: 300;
+        }
+        input{
+            width: 469px;
+            height: 64px;
+            border:3px solid $grey;
+            margin: 20px 0;
+            padding: 10px 20px;
+            opacity: 40%;
+            font-size: 16px;
+            font-weight: bold;
+
+            @include for-sm-only{
+                width: 100%;
+            }
+        }
+        button{
+            margin-left: -166px;
+            width: 158px;
+            position: relative;
+            z-index: 10;
+
+            @include for-sm-only{
+                position: absolute;
+                margin-top: 24px;
+                margin-left: -163px;
+            }
+        }
+    }
+}
+
+
+
+//media queries
+
+@media screen and (max-width: 1200px) {
+    .hp{
+        .hp-s1{
+            justify-content: flex-start;
+        }
+        .hp-reference{
+            .hp-reference-s1{
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .hp{
+        .hp-s1{
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-right: 15px;
+            .product-category{
+                justify-self: start;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+    .hp{
+        .hp-reference{
+            .hp-reference-s1{
+                .client-reference{
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        margin: 20px 0;
+                    }
+                    div{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hp{
+        .hp-mobile-sliders{
+            height:285px;
+        }
+        .header-slide1, .header-slide2{
+            .header-slide-group{
+                margin: 0;
+                padding: 20px 15px;
+            }
+            .btn-group-category{
+                margin-top: 20px;
+                button:first-child{
+                    display: none;
+                }
+            }
+        }
+        .carousel-arrows{
+            display: none;
+        }
+        .hp-s1{
+            margin-top: 20px;
+        }
+
+        .hp-s1{
+            .product-category{
+                h4{
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .hp-sale{
+            height: 351px;
+            .hp-sale-s1{
+                top:5%;
+                h2{
+                    font-size: 20px ;
+                }
+            }
+        }
+    }
+}

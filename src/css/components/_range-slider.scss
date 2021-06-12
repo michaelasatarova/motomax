@@ -1,0 +1,34 @@
+.shop{
+
+    #amount{
+        background-color: transparent;
+    }
+    .ui-slider-horizontal {
+         height:3px; 
+    }
+    .ui-widget-content {
+        background: $light;
+        margin: 20px 0;
+    }
+    .ui-widget-header {
+        background: $yellow;
+    }
+
+    .ui-slider .ui-slider-handle {
+        width: 0.2em;
+    }
+
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+        border: none;
+        background: $yellow;
+        color: #454545;
+    }
+
+    .ui-slider-horizontal .ui-slider-handle {
+        margin-left: 0; 
+        top:-6px
+    }
+    .ui-widget.ui-widget-content {
+         border: none;
+    }
+}

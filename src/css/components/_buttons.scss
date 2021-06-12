@@ -1,0 +1,30 @@
+button{
+    cursor:pointer;
+    border:none;
+    outline:none !important;
+    background:none;
+    font-size: 16px;
+}
+
+.btn-white{
+    border:1px solid $white;
+    color:$white;
+    font-weight: bold;
+    width: 204px;
+    height: 56px; 
+}
+
+.btn-black{
+    border:1px solid $dark;
+    color:$dark;
+    font-weight: bold;
+    width: 204px;
+    height: 56px; 
+}
+
+.btn-orange{
+ background-color: $yellow;
+ color: $dark;
+ font-weight: bold;
+ height: 56px; 
+}

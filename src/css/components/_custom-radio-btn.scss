@@ -1,0 +1,74 @@
+.custom-radio-button{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid $light;
+    background-color: #ffffff75;
+    width: 263px;
+    height: 75px;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    @include for-sm-only{
+      width: 100%;
+    }
+
+        input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 28px;
+            left: 20px;
+            height: 15px;
+            width: 15px;
+            background-color: #fff;
+            border: 1px solid $yellow;
+            border-radius: 50%;
+          }
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+}
+
+/* On mouse-over, add a grey background color */
+.custom-radio-button:hover input ~ .checkmark {
+    // background-color: $yellow;
+  }
+
+/* When the radio button is checked, add a blue background */
+  .custom-radio-button input:checked ~ .checkmark {
+    // background-color: $yellow;
+    border: 1px solid $yellow;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+.custom-radio-button input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+
+  .custom-radio-button .checkmark:after {
+    top: 1.5px;
+    left: 2.7px;
+    width: 9px;
+    height: 9px;
+   border-radius: 50%;
+   border:1px solid $yellow;
+   background: $yellow;
+   padding: 3px;
+}

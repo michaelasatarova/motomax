@@ -1,0 +1,105 @@
+.empty-basket{
+
+    .page-heading{
+        background-image: none;
+
+        @include for-sm-only{
+            background-image: url(/src/img/heading-bg-large.png);
+        }
+
+        a, p{
+            color: $dark;
+            @include for-sm-only{
+                color: $white;
+            }
+        }
+        a:last-child{
+            color:$yellow;
+        }
+    }
+
+    .empty-basket-announce{
+        width: 598px;
+        height: 380px;
+        background-image: url(/src/img/empty-parking.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        @include for-sm-only{
+            background-image: none;
+        }
+
+        h1{
+            font-weight: bold;
+            span{
+                color: $yellow;
+            }
+        }
+
+        a{
+            width: 204px;
+            height: 56px;
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 25px;
+        }
+
+    }
+
+    .mobile-only{
+        display: none;
+
+        @include for-sm-only{
+                display: block;
+            
+        }
+    }
+    .banner{
+        background-image: url(/src/img/empty-basket-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 370px;
+        width: 100%;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding: 20px;
+
+        h4{
+            font-size: 24px;
+            font-weight: bold;
+            color: $white;
+            margin-bottom: 20px;
+
+            span{
+                color: $yellow;
+            }
+        }
+        a{
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+        }
+    }
+}
+
+//media queries
+
+@media screen and (max-width: 700px) {
+
+    .empty-basket{
+        .empty-basket-announce{
+            width: 100%;
+        }
+    }
+}

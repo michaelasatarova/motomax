@@ -1,0 +1,182 @@
+.my-account{
+
+    .custom-container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .my-account-navi{
+        width: 324px;
+        display: none;
+
+        @include xl-up{
+            display: block;
+        }
+
+        h3{
+            background-color: $dark;
+            padding: 20px;
+            color: $white;
+            font-weight: bold;
+        }
+        ul{
+            li{
+                padding: 15px;
+                font-size: 17px;
+                color: $grey;
+                .active{
+                    color: $yellow;
+                    text-decoration: none;
+                }
+                a{
+                    color: $grey;
+                    &:hover, &:active, &:focus{
+                        color: $yellow;
+                        text-decoration: none;
+                    }
+
+                }
+            }
+        }
+    }
+    form{
+        width: 812px;
+        margin:0 auto;
+        background-color: #141414f0;
+        padding: 20px;
+        color: $white;
+        margin-bottom: 40px;
+
+        .user-name{
+            position: relative;
+            right: 85px;
+            h3{
+                margin: 0;
+            }
+            p{
+                margin-bottom: 0;
+                color: $grey;
+            }
+        }
+        .user-avatar{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                height: 150px;
+                background: $dark;
+                color: $white;
+
+                @include for-sm-only{
+                    flex-direction: column;
+                    height: 300px;
+                }
+
+                .avatar{
+                    width: 110px;
+                    height: 110px;
+                    background: transparentize($white, 0.93);
+                    border-radius: 50%;
+                }
+
+                label[for="upload-photo"]{
+                color: $white;
+                cursor: pointer;
+                border: 1px solid $grey;
+                width: 134px;
+                height: 34px;
+                padding: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            #upload-photo {
+                opacity: 0;
+                position: absolute;
+            }
+            h3{
+                @include for-sm-only{
+                    text-align: center;
+                }
+            }
+        }
+
+        .form-data-row{
+            display: flex;
+            justify-content: space-between;
+            .mobile-only{
+                display: none;
+            }
+            label{
+                display:flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                input[type=number]{
+                    appearance: none;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                }
+                input, select{
+                    width: 378px;
+                    height: 50px;
+                    padding-left: 15px;
+                    background-color: $dark;
+                    color: $grey;
+                    border: none;
+                    font-weight: bold;
+                }
+                .dp-p{
+                    width: 225px;
+                }
+                p{
+                    margin-top:10px;
+                    margin-bottom: 5px;
+                    color: $grey;
+                }
+                span{
+                    color: red;
+                }
+                
+            }
+        }
+
+        .btn-orange{
+            width: 243px;
+            margin: 20px 0;
+            float: right;
+        }
+
+    }
+}
+
+
+//media queries
+
+@media screen and (max-width: 900px) {
+
+    .my-account{
+        form{
+            width: 100%;
+
+            .user-name{
+                right: 0;
+            }
+            .form-data-row{
+                flex-direction: column;
+                label{
+                    input, select{
+                        width: 100%;
+                    }
+                }
+            }
+            .btn-orange{
+                width: 100%;
+                float: none;
+            }
+        }
+    }
+}
